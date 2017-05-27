@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment1</title>
+        <meta charset="utf-8">
+
+    </head>
+
+    <script type = "text/javascript">
+        var HOUR = 7;
+        var MINUTE = 15;
+        var PERIOD = "PM";
+
+        if (MINUTE > 0 && MINUTE < 30)
+        {
+            if (PERIOD == "PM"){
+                console.log("It's just after " + HOUR + " in the evening")
+            }
+            else {
+                console.log("It's just after " + HOUR + " in the morning")
+            }
+
+        }
+        else if (MINUTE >= 30 && MINUTE < 60) {
+            var time = HOUR + 1;
+            if (PERIOD == "PM"){
+                console.log("It's almost " + time + " in the evening")
+            }
+            else {
+                console.log("It's almost " + time + " in the morning")
+            }
+        }
+
+    </script>
+</html>
