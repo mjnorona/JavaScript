@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment7</title>
+        <meta charset="utf-8">
+
+    </head>
+
+    <script type = "text/javascript">
+        function slots(quarters){
+            var chance;
+            var left;
+            for (var i = quarters; i > 0; i--){
+                chance = Math.trunc(Math.random() * 101);
+                console.log(i + "chance: " + chance);
+                if (chance == 1){
+                    left = i;
+                    break;
+                }
+                else {
+                    left = 0;
+                }
+            }
+            return left;
+        }
+
+        console.log(slots(25));
+    </script>
+</html>

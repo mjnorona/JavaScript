@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment8</title>
+    <meta charset="utf-8">
+
+</head>
+
+    <script type = "text/javascript">
+        function numbersOnly(arr){
+            var newArray = [];
+            for (var i = 0; i < arr.length; i++){
+                if (typeof arr[i] === "number"){
+                    newArray.push(arr[i]);
+                }
+            }
+            return newArray;
+        }
+
+        console.log(numbersOnly([1, "apple", -3, "orange", 0.5]));
+    </script>
+</html>
