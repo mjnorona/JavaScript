@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.section{
+    display: block;
+    padding: 30px 30px 30px 30px;
+}
+
+.section h1{
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.section button{
+    display: inline-block;
+}
+
+.section p{
+    display: inline-block;
+}
+
+.blue {
+    color: blue;
+}

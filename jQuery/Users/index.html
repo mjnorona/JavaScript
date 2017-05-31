@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>jQuery</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $("button").click(function(){
+
+                    var first = $("#first").val();
+                    var last = $("#last").val()
+                    var email = $("#email").val()
+                    var contact = $("#contact").val()
+                    $("#myBody").append("<tr><td>" + first + "</td><td>" + last + "</td><td>" + email + "</td><td>" + contact + "</td></tr>")
+                })
+
+
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class = "head">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                        <th>Contact #</th>
+                    </tr>
+                </thead>
+                <tbody id = "myBody">
+
+                </tbody>
+
+            </table>
+        </div>
+        <form id="addUser">
+            <h1>Add User</h1>
+            <hr>
+            <label>First Name:</label><input id= "first" type="text" placeholder="First Name">
+            <label>Last Name:</label> <input id = "last" type="text" placeholder="Last Name">
+            <label>Email Address:</label> <input id = "email" type="text" placeholder="Email Address">
+            <label>Contact No.:</label> <input id = "contact" type="text" placeholder="Phone #">
+            <button type = "button" value = "submit">Add User</button>
+
+        </form>
+    </body>
+</html>

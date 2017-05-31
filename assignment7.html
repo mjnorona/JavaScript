@@ -9,12 +9,15 @@
     <script type = "text/javascript">
         function slots(quarters){
             var chance;
+            var win;
             var left;
             for (var i = quarters; i > 0; i--){
                 chance = Math.trunc(Math.random() * 101);
                 console.log(i + "chance: " + chance);
                 if (chance == 1){
-                    left = i;
+                    win = Math.trunc(Math.random() * 51) + 50;
+                    console.log("win: " + win);
+                    left = i - 1 + win;
                     break;
                 }
                 else {

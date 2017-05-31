@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $('#click button').click(function(){
+                    alert('Click button works!');
+                });
+
+                $("#hide button").click(function(){
+                    $("#hide h1").hide("slow", function(){
+                        alert("Animation complete. ");
+                    });
+                });
+
+                $("#show h1").hide();
+                $("#show button").click(function(){
+                    $("#show h1").show("slow", function(){
+                        alert("animation complete. ");
+                    });
+                });
+
+                $("#toggle button").click(function(){
+                    $("#toggle h1").toggle("slow", function(){
+                      alert("animation complete. ");
+                    });
+                });
+
+                $("#slideDown h1").hide();
+                $("#slideDown button").click(function(){
+                    $("#slideDown h1").slideDown("slow", function(){
+                        alert("animation complete. ");
+                    });
+                });
+
+                $("#slideUp button").click(function(){
+                    $("#slideUp h1").slideUp("slow", function(){
+                        alert("animation complete. ");
+                    });
+                });
+
+                $("#slideToggle button").click(function(){
+                   $("#slideToggle h1").slideToggle();
+                });
+
+                $("#fadeIn h1").hide();
+                $("#fadeIn button").click(function(){
+                    $("#fadeIn h1").fadeIn();
+                })
+
+                $("#fadeOut button").click(function(){
+                    $("#fadeOut h1").fadeOut();
+                })
+
+                $("#addClass button").click(function(){
+                    $("#addClass h1").addClass("blue");
+                })
+
+                $("#before button").click(function(){
+                    $("#before h1").before("<p>INSERTED TEXT</p>");
+                })
+
+                $("#after button").click(function(){
+                    $("#after h1").after("<p>INSERTED TEXT</p>");
+                })
+
+                $("#append button").click(function(){
+                    $("#append h1").append("<strong>INPUT</strong>");
+                })
+
+                $("#html").click(function(){
+                    var string = $(this).html();
+                    $(this).text(string);
+                })
+
+                $("#attr button").click(function(){
+                    var string = $("#attr h1").attr("alternate");
+                    $(this).text(string);
+                })
+
+                $("#val button").click(function(){
+                    var string = $("input:checked", "#val").val();
+                    alert("Value is " + string);
+                })
+
+                $("#text button").click(function(){
+                    var string = $("#text").text();
+                    $("p").text("Text of this div is : " + string);
+                })
+
+                $("#data button").click(function(){
+                    $("#data h1").data("test", {first: "stored data"});
+                    $("#data h1").text($("#data h1").data("test").first)
+                })
+
+
+            });
+        </script>
+
+
+        <div id="click" class = "section">
+
+            <button>Click</button>
+            <h1>Click</h1>
+        </div>
+        <hr>
+        <div id = "hide" class = "section">
+
+            <button>Hide</button>
+            <h1>Hide</h1>
+        </div>
+        <hr>
+        <div id = "show" class = "section">
+
+            <button>Show</button>
+            <h1>Show</h1>
+        </div>
+        <hr>
+        <div id = "toggle" class = "section">
+
+            <button>Toggle</button>
+            <h1>Toggle</h1>
+        </div>
+        <hr>
+        <div id = "slideDown" class = "section">
+
+            <button>SlideDown</button>
+            <h1>SlideDown</h1>
+        </div>
+        <hr>
+        <div id = "slideUp" class = "section">
+
+            <button>SlideUp</button>
+            <h1>SlideUp</h1>
+        </div><hr>
+        <div id = "slideToggle" class = "section">
+
+            <button>SlideToggle</button>
+            <h1>SlideToggle</h1>
+        </div>
+        <hr>
+        <div id = "fadeIn" class = "section">
+
+            <button>FadeIn</button>
+            <h1>FadeIn</h1>
+        </div>
+        <hr>
+        <div id = "fadeOut" class = "section">
+
+            <button>FadeOut</button>
+            <h1>FadeOut</h1>
+        </div>
+        <hr>
+        <div id = "addClass" class = "section">
+
+            <button>AddClass</button>
+            <h1>AddClass</h1>
+        </div>
+        <hr>
+        <div id = "before" class = "section">
+
+            <button>Before</button>
+            <h1>Before</h1>
+        </div>
+        <hr>
+        <div id = "after" class = "section">
+
+            <button>After</button>
+            <h1>After</h1>
+        </div>
+        <hr>
+        <div id = "append" class = "section">
+            <button>Append</button>
+            <h1>Append</h1>
+        </div>
+        <hr>
+        <div id = "html" class = "section">
+            <button>HTML</button>
+            <h1>HTML</h1>
+        </div>
+        <hr>
+        <div id = "attr" class = "section">
+
+            <button>Attr</button>
+            <h1 alternate="this is the attribute">Attr</h1>
+        </div>
+        <hr>
+
+        <div id='val' class = section>
+            <button>Val</button>
+            Choose
+            <input type='radio' value = "1">1
+            <input type='radio' value = "2">2
+            <input type='radio' value = "3">3
+        </div>
+        <hr>
+        <div id = "text" class = "section">
+
+            <button>Text</button>
+            <h1>Text</h1>
+        </div>
+        <p></p>
+        <hr>
+        <div id = "data" class = "section">
+
+            <button>Data</button>
+            <h1>Data</h1>
+        </div>
+
+    </body>
+</html>

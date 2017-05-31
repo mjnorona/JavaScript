@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 10px 10px 10px 10px;
+}
+img {
+    max-height: 200px;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+button{
+    padding: 10px 10px 10px 10px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $("img").click(function(){
+                    $(this).hide("slow");
+                })
+
+                $("button").click(function(){
+                    $("img").show("slow");
+                })
+
+
+            })
+        </script>
+
+
+        <h1>jQuery - assignment 1</h1>
+        <div class = "row">
+            <img src = "19519_cool_square.png">
+            <img src = "19519_cool_square.png">
+            <img src = "19519_cool_square.png">
+            <img src = "19519_cool_square.png">
+        </div>
+        <div class = "row">
+            <img src = "19519_cool_square.png">
+            <img src = "19519_cool_square.png">
+            <img src = "19519_cool_square.png">
+            <img src = "19519_cool_square.png">
+        </div>
+        <button>Restore</button>
+    </body>
+</html>

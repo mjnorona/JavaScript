@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px
+
+}
+body {
+    width: 600px;
+}
+table {
+    border: 3px solid black;
+}
+ th {
+    margin-right: 30px;
+}
+input{
+    display: block;
+}
+
+
